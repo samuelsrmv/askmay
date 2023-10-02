@@ -11310,14 +11310,6 @@
        },
        93802: function (e, t) {
           "use strict";
-          /** @license React v16.13.1
-           * react-is.production.min.js
-           *
-           * Copyright (c) Facebook, Inc. and its affiliates.
-           *
-           * This source code is licensed under the MIT license found in the
-           * LICENSE file in the root directory of this source tree.
-           */
           var n = "function" == typeof Symbol && Symbol.for,
              r = n ? Symbol.for("react.element") : 60103,
              o = n ? Symbol.for("react.portal") : 60106,
@@ -11406,15 +11398,6 @@
        },
        92810: function (e, t) {
           "use strict";
-          /**
-           * @license React
-           * react-is.production.min.js
-           *
-           * Copyright (c) Facebook, Inc. and its affiliates.
-           *
-           * This source code is licensed under the MIT license found in the
-           * LICENSE file in the root directory of this source tree.
-           */
           var n, r = Symbol.for("react.element"),
              o = Symbol.for("react.portal"),
              i = Symbol.for("react.fragment"),

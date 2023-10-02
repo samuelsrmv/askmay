@@ -1477,11 +1477,6 @@
        },
        68685: function (t, e) {
           var r;
-          /** @license
-           * eventsource.js
-           * Available under MIT License (MIT)
-           * https://github.com/Yaffle/EventSource/
-           */
           ! function (n) {
              "use strict";
              var o = n.setTimeout,
@@ -2320,12 +2315,6 @@
        },
        73951: function (t, e, r) {
           "use strict";
-          /*!
-           * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
-           *
-           * Copyright (c) 2014-2017, Jon Schlinkert.
-           * Released under the MIT License.
-           */
           var n = r(8924);
  
           function o(t) {
@@ -2338,12 +2327,6 @@
        },
        8924: function (t) {
           "use strict";
-          /*!
-           * isobject <https://github.com/jonschlinkert/isobject>
-           *
-           * Copyright (c) 2014-2017, Jon Schlinkert.
-           * Released under the MIT License.
-           */
           t.exports = function (t) {
              return null != t && "object" == typeof t && !1 === Array.isArray(t)
           }

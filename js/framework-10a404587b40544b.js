@@ -6105,15 +6105,6 @@
          }(), e.exports = t(2920)
       },
       82875: function (e, n, t) {
-         /**
-          * @license React
-          * react-jsx-runtime.production.min.js
-          *
-          * Copyright (c) Facebook, Inc. and its affiliates.
-          *
-          * This source code is licensed under the MIT license found in the
-          * LICENSE file in the root directory of this source tree.
-          */
          var r = t(70079),
             l = Symbol.for("react.element"),
             a = Symbol.for("react.fragment"),
@@ -6145,15 +6136,6 @@
          n.Fragment = a, n.jsx = s, n.jsxs = s
       },
       99504: function (e, n) {
-         /**
-          * @license React
-          * react.production.min.js
-          *
-          * Copyright (c) Facebook, Inc. and its affiliates.
-          *
-          * This source code is licensed under the MIT license found in the
-          * LICENSE file in the root directory of this source tree.
-          */
          var t = Symbol.for("react.element"),
             r = Symbol.for("react.portal"),
             l = Symbol.for("react.fragment"),
@@ -6446,15 +6428,6 @@
          e.exports = t(82875)
       },
       95507: function (e, n) {
-         /**
-          * @license React
-          * scheduler.production.min.js
-          *
-          * Copyright (c) Facebook, Inc. and its affiliates.
-          *
-          * This source code is licensed under the MIT license found in the
-          * LICENSE file in the root directory of this source tree.
-          */
          function t(e, n) {
             var t = e.length;
             e.push(n);
