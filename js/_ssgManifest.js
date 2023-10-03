@@ -1,1 +1,1 @@
-self.__SSG_MANIFEST=new Set(["/","/blog","/blog/[...slug]","/changelog","/changelog/[...slug]","/docs/[[...slug]]","/docs/components","/pricing","/redeem","/themes"]),self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB();
+self.__SSG_MANIFEST=new Set(["/blog","/guides","/customers","/learn-email","/changelog","/onboarding/platform","/[...slug]","/blog/[slug]","/changelog/[slug]","/customers/[slug]","/guides/[slug]","/docs/[...slug]","/learn-email/[slug]","/solutions/esp/[slug]","/lessons/[...slug]"]),self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB();
