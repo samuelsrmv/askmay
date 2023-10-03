@@ -202,6 +202,10 @@ table {
 }
 
 :root {
+    --page-padding-default: 15px;
+}
+
+:root {
 	--header-height: 48px;
 	--page-padding-default: 32px;
 	--page-max-width: 1200px;
@@ -293,6 +297,7 @@ table {
 	--color-green: #4cb782;
 	--color-orange: #f2994a
 }
+
 
 @supports (height:1dvh) {
 	:root {
@@ -520,11 +525,11 @@ html:not(.logged-in) [data-show=logged-in] {
 }
 
 svg.logotype {
-	height: auto;
+    height: auto;
+}
 
-	&>* {
-		fill: inherit
-	}
+svg.logotype > * {
+    fill: inherit;
 }
 
 .visually-hidden {
@@ -718,3 +723,12 @@ pre {
 html:not(.js) button[data-rmiz-btn-open] {
 	display: none
 }
+
+.kRWWW {
+    box-decoration-break: clone;     
+    -webkit-box-decoration-break: clone;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
