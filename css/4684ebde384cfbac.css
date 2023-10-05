@@ -89,54 +89,44 @@
 /* prueba */
 .menu-container {
     position: relative;
-    display: none; /* Por defecto, el contenedor del menú está oculto */
+    display: inline-block;
 }
 
 .dropdown-menu {
     display: none;
     position: absolute;
-    left: 50%; 
-    transform: translateX(-50%);
+    right: 0;
     top: 100%;
-    background-color: #f9f9f9;
+    background-color: #0D1116;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin: 0;
-    padding: 0;
+    border-radius: 5px; /* Añade esquinas redondeadas */
 }
 
 .dropdown-menu a {
-    color: black;
-    padding: 12px 16px;
+    color: rgba(157,172,191,1);
+    padding: 12px 20px; /* Aumenta el padding para darle más espacio */
     text-decoration: none;
     display: block;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: background-color 0.3s; /* Hace que el cambio de color sea suave */
 }
 
 .dropdown-menu a:hover {
     background-color: #f1f1f1;
+    color: #000; /* Cambia el color del texto al pasar el ratón por encima */
 }
 
-.navigation___StyledDiv4-u4io24-4 {
-    margin: 0;
-    padding: 0;
-    display: none;
-    position: absolute;
-    top: 100%;
-    z-index: 1;
-}
-
-/* Estilos responsive */
+/* Para dispositivos móviles */
 @media (max-width: 600px) {
     .menu-container {
-        display: inline-block; /* Muestra el menú solo en dispositivos móviles */
-    }
-    
-    .dropdown-menu {
-        width: 100%;
-        left: 0;
-        transform: none;
+        display: inline-block;
     }
 }
 
+/* .ggjmp{font-weight:500;line-height:1rem;margin-bottom:0px;}!sc */
 /* prueba */

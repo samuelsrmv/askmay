@@ -774,7 +774,6 @@
                             </div>
                          </button> -->
                          <!-- prueba -->
-                         <div class="menu-container">
                            <button class="navigation___StyledButton2-u4io24-13 ccldPQ" onclick="toggleMenu()">
                                <div class="navigation___StyledDiv5-u4io24-14 lhZdCw">
                                    <div class="navigation___StyledDiv6-u4io24-15 iCtdyZ"></div>
@@ -782,23 +781,11 @@
                                    <div class="navigation___StyledDiv8-u4io24-17 TlzMJ"></div>
                                </div>
                            </button>
-                       
-                           <div class="navigation___StyledDiv4-u4io24-4 dwXBoE">
-                               <ul class="navigation___StyledUl-u4io24-5 HRfgi">
-                                   <li class="navigation___StyledLi2-u4io24-18 jsfEiA group ">
-                                       <span class="navigation___StyledSpan-u4io24-19 gZhjWW">Platform</span>
-                                       <div class="navigation___StyledDiv9-u4io24-23 HGjOw">
-                                           <div class="navigation___StyledDiv10-u4io24-24 bmZMCH navigation___StyledFlyout-u4io24-27 bZWTTu">
-                                               <div class="navigation___StyledDiv13-u4io24-40 hAlmjK">
-                                                   <!-- Aquí inician tus enlaces y la parte incompleta del código -->
-                                                   ...
-                                               </div>
-                                           </div>
-                                       </div>
-                                   </li>
-                               </ul>
+                           <div id="dropdownMenu" class="dropdown-menu">
+                               <a href="#">Opción 1</a>
+                               <a href="#">Opción 2</a>
+                               <a href="#">Opción 3</a>
                            </div>
-                       </div>                       
                        <!-- prueba -->
                      </div>
                      <div class="navigation___StyledDiv4-u4io24-4 dwXBoE">
@@ -1977,14 +1964,14 @@
       <!-- prueba -->
       <script>
          function toggleMenu() {
-             var menu = document.querySelector(".navigation___StyledDiv4-u4io24-4");
+             var menu = document.getElementById("dropdownMenu");
              if (menu.style.display === "none" || menu.style.display === "") {
                  menu.style.display = "block";
              } else {
                  menu.style.display = "none";
              }
          }
-     </script>
+     </script>     
      <!-- prueba -->
    </body>
 </html>
