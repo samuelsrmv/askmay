@@ -1320,10 +1320,10 @@
                             Growth</h1>
                         <p class="header___StyledP2-sc-1a4aghz-6 iTLFNY">AskMay accelerates your Hypothesis-Driven</p>
                         <p class="header___StyledP2-sc-1a4aghz-6 iTLFNY">Experimentation for faster growth.</p>
-                        <div class="header___StyledDiv3-sc-1a4aghz-7 huNuar header___StyledActions-sc-1a4aghz-8 kgpImZ">
+                        <div id="whatsapp-form" method="POST" action="https://formspree.io/f/xrgwojkw" class="header___StyledDiv3-sc-1a4aghz-7 huNuar header___StyledActions-sc-1a4aghz-8 kgpImZ">
                            <a class="button___StyledA-sc-17tei8q-0 fGkZSB header___StyledButton-sc-1a4aghz-9 lpnUOf" href="/register">Get started</a>
                            <form class="header___StyledForm-sc-1a4aghz-10 idIYBT"><input placeholder="hello@askmay.ai" name="email" class="header___StyledInput-sc-1a4aghz-11 eYVKXR"><button class="button___StyledButton-sc-17tei8q-1 dWzTcM">Get started</button></form>
-                        </div>
+                        </div>                  
                      </header>
                      <!-- <div class="indexpage___StyledDiv15-rd7euw-21 iIcikq">
                         <span class="indexpage___StyledSpan-rd7euw-22 dCjkzu">Loved by developers and marketers alike</span>
@@ -1980,5 +1980,27 @@
          }
      </script>     
      <!-- prueba -->
+     <script>
+      document.getElementById('whatsapp-form').addEventListener('submit', function(event) {
+         event.preventDefault(); // prevent the form from submitting normally
+      
+         var xhr = new XMLHttpRequest();
+         var form = event.target; // the form that was submitted
+         var formData = new FormData(form);
+      
+         xhr.open("POST", "https://formspree.io/f/xrgwojkw", false); // Cambiar a false para hacerlo sincrónico
+         xhr.setRequestHeader("Accept", "application/json");
+      
+         xhr.onreadystatechange = function() {
+             if (xhr.readyState !== XMLHttpRequest.DONE) return;
+             if (xhr.status !== 200) {
+                 console.error("Error al enviar el formulario");
+             }
+         };
+      
+         xhr.send(formData);
+         window.location.href = "https://calendly.com/h---09u/30min";
+      });
+   </script>
    </body>
 </html>
