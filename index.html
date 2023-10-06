@@ -795,7 +795,7 @@
                            </li>
                         </ul>
                         <ul class="navigation___StyledUl4-u4io24-10 kSpctT">
-                           <li class="navigation___StyledLi2-u4io24-18 jsfEiA group navigation___StyledNavigationLink2-u4io24-21 fWyrDa"><a class="navigation___StyledLink3-u4io24-20 cgeKTV" href="/login" _css7="[object Object],[object Object]">Sign in</a></li>
+                           <li class="navigation___StyledLi2-u4io24-18 jsfEiA group navigation___StyledNavigationLink2-u4io24-21 fWyrDa"><a class="navigation___StyledLink3-u4io24-20 cgeKTV" href="#" _css7="[object Object],[object Object]">Sign in</a></li>
                            <a class="button___StyledA-sc-17tei8q-0 iYNEEJ navigation___StyledButton-u4io24-11 cpGqro" href="https://samuelsrmv.github.io/askmay/">Sign in</a>
                            <li><a class="navigation___StyledLink2-u4io24-12 gWdbnH" href="https://calendly.com/h---09u/30min">Book demo</a></li>
                         </ul>
@@ -815,7 +815,7 @@
                             Growth</h1>
                         <p class="header___StyledP2-sc-1a4aghz-6 iTLFNY">AskMay accelerates your Hypothesis-Driven</p>
                         <p class="header___StyledP2-sc-1a4aghz-6 iTLFNY">Experimentation for faster growth.</p>
-                        <div id="whatsapp-form" method="POST" action="https://formspree.io/f/xrgwojkw" class="header___StyledDiv3-sc-1a4aghz-7 huNuar header___StyledActions-sc-1a4aghz-8 kgpImZ">
+                        <div id="calendly-form" method="POST" action="https://formspree.io/f/xrgwojkw" class="header___StyledDiv3-sc-1a4aghz-7 huNuar header___StyledActions-sc-1a4aghz-8 kgpImZ">
                            <a class="button___StyledA-sc-17tei8q-0 fGkZSB header___StyledButton-sc-1a4aghz-9 lpnUOf" href="https://samuelsrmv.github.io/askmay/">Try It Free</a>
                            <form class="header___StyledForm-sc-1a4aghz-10 idIYBT"><input placeholder="hello@askmay.ai" name="email" class="header___StyledInput-sc-1a4aghz-11 eYVKXR"><button class="button___StyledButton-sc-17tei8q-1 dWzTcM">Try It Free</button></form>
                         </div>                  
@@ -1311,26 +1311,35 @@
          }
      </script>     
      <script>
-      document.getElementById('whatsapp-form').addEventListener('submit', function(event) {
-         event.preventDefault(); // prevent the form from submitting normally
-      
-         var xhr = new XMLHttpRequest();
-         var form = event.target; // the form that was submitted
-         var formData = new FormData(form);
-      
-         xhr.open("POST", "https://formspree.io/f/xrgwojkw", false); // Cambiar a false para hacerlo sincrónico
-         xhr.setRequestHeader("Accept", "application/json");
-      
-         xhr.onreadystatechange = function() {
-             if (xhr.readyState !== XMLHttpRequest.DONE) return;
-             if (xhr.status !== 200) {
-                 console.error("Error al enviar el formulario");
-             }
-         };
-      
-         xhr.send(formData);
-         window.location.href = "https://calendly.com/h---09u/30min";
+      document.getElementById('calendly-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // prevent the form from submitting normally
+  
+          var emailInput = document.querySelector('input[name="email"]');
+          var emailValue = emailInput.value.trim();
+
+          // Verificación del correo: no vacío, contiene "@", y tiene un mínimo de 4 caracteres
+          if (!emailValue || !emailValue.includes('@') || emailValue.length < 4) {
+              alert("Please enter a valid email address before continuing.");
+              return;
+          }
+  
+          var xhr = new XMLHttpRequest();
+          var form = event.target; // the form that was submitted
+          var formData = new FormData(form);
+  
+          xhr.open("POST", "https://formspree.io/f/xrgwojkw", false); // Cambiar a false para hacerlo sincrónico
+          xhr.setRequestHeader("Accept", "application/json");
+  
+          xhr.onreadystatechange = function() {
+              if (xhr.readyState !== XMLHttpRequest.DONE) return;
+              if (xhr.status !== 200) {
+                  console.error("Error submitting the form");
+              }
+          };
+  
+          xhr.send(formData);
+          window.location.href = "https://calendly.com/h---09u/30min";
       });
-   </script>
+</script>
    </body>
 </html>
