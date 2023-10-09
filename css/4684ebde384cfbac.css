@@ -134,3 +134,10 @@
 
 /* .ggjmp{font-weight:500;line-height:1rem;margin-bottom:0px;}!sc */
 /* prueba */
+
+/* Rocket  */
+.bRTjRT {
+    width: 100%;          /* Ocupa todo el ancho del contenedor */
+    height: auto;         /* El alto se ajusta automáticamente según el aspecto de la imagen */
+    object-fit: cover;    /* La imagen cubrirá todo el contenedor sin distorsionarse */
+}
